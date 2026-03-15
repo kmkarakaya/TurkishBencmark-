@@ -824,6 +824,10 @@ def render() -> None:
             "Devam edebilmek için önce `OLLAMA_API_KEY` girmeniz gerekiyor. "
             "Anahtar maskeli olarak alınır ve sadece mevcut oturumda kullanılır."
         )
+        st.info(
+            "For direct access to ollama.com's API, first create an API key: "
+            "https://ollama.com/settings/keys"
+        )
         entered_api_key = st.text_input(
             "OLLAMA_API_KEY",
             type="password",
